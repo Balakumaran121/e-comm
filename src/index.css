@@ -1,8 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
+html,
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+footer,
+header {
+  flex-shrink: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
 }

@@ -1,10 +1,10 @@
-import Header from '../components/Header'
+import Layout from '@layout/Layout'
 
 const Home = () => {
   return (
-    <div>
-      <Header />
-    </div>
+    <Layout>
+      <h1>Home</h1>
+    </Layout>
   )
 }
 
